@@ -2117,9 +2117,12 @@ figcaption {
 }
 
 .button-div {
-  width: 100%;
-  text-align: left;
-  padding-left: 24px;
+  grid-area: span 1 / span 1 / span 1 / span 1;
+  display: flex;
+  flex-direction: column; /* Ensures text and button are stacked */
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .button-div.pl-0 {
@@ -2127,10 +2130,12 @@ figcaption {
 }
 
 .spartan-70 {
-  width: 90%;
+  width: 100%;
   font-size: 54px;
   line-height: 72px;
   display: flex;
+  text-align: center;
+  max-width: 60%;
 }
 
 .cell {
@@ -4443,11 +4448,19 @@ figcaption {
 
 #w-node-_97ff1318-d890-f4e8-e23c-e2cb47f1384b-a3801886 {
   grid-template-rows: auto;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center; 
+  height: 80vh;
 }
 
 #w-node-_97ff1318-d890-f4e8-e23c-e2cb47f1384c-a3801886, #w-node-_97ff1318-d890-f4e8-e23c-e2cb47f1384d-a3801886 {
-  grid-area: span 1 / span 1 / span 1 / span 1;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr;
+  display: grid;
+  place-items: center;
 }
 
 #w-node-_7553aa17-0aa1-fac7-2192-759cae553d94-a3801886 {
